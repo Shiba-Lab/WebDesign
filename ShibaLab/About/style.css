@@ -39,3 +39,54 @@
     color: #f5f5f5;
     font-size: 3rem;
 }
+
+.contents {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+.image {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 5rem;
+    z-index: 1;
+}
+
+
+
+.image_text {
+    color: #ffffff;
+    width: 100%;
+    font-size: calc(1rem + ((1vw - 0.3rem) * 1.5625));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.contents_caption {
+    font-size: 2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.pillar {
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 0;
+    transform: translate(-50%,0);
+}
