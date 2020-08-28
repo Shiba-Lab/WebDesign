@@ -1,0 +1,62 @@
+:root {
+    --content-height: 400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 10%;
+}
+
+.margin-box {
+    height: 300px;
+}
+
+.left {
+    border-left: 3px solid #FFF;
+}
+
+.container {
+    position: relative;
+    height: var(--content-height);
+    padding-right: var(--content-height);
+}
+
+.container::after {
+    /*斜め線部分*/
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: calc(var(--content-height) / 2);
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #fff;
+    transform: skewX(45deg);
+}
+
+.content {
+    border-top: 3px solid #fff;
+}
+
+.content h2 {
+    margin-top: -14px;
+    /*フォントサイズ×line-height値×-0.5 ぐらいが目安*/
+    text-align: center;
+}
+
+.content h2 span {
+    background: #000;
+    display: inline-block;
+    padding: 0 1em;
+}
