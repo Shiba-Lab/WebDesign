@@ -180,3 +180,16 @@ footer .logo {
     text-align: right;
     /* margin: 4px 2px; */
 }
+
+.user {
+    margin-top: 20px
+}
+
+.user .text-muted {
+    margin-bottom: 0px
+}
+
+.user .rounded-circle {
+    width: 70px;
+    height: 70px;
+}
