@@ -2,45 +2,43 @@ body {
     background-color: #f5f5f5;
 }
 
-.rect {
+/* .rect {
     position: absolute;
     left: -1%;
     /* right: 1%; */
-    top: -15%;
-    width: 45vw;
+    /* top: -15%; */
+    /* width: 45vw;
     height: 50%;
     transform: rotate(4deg) translateY(-100px);
     background-color: #3f3c7c;
-}
+}  */
 
 .header {
-    position: relative;
-    z-index: 1;
-    margin-bottom: 8vw;
-    /* margin: auto; */
-    margin-left: auto;
-    margin-right: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    /* position: fixed; */
+    background-color:#fff;
+    z-index: 2;
 }
 
 .header .logo {
-    width: 10vw;
+    width: max(8vw,150px);
+    margin-right: auto;
 }
 
 .header .headerNav {
-    position: absolute;
-    top: 45%;
-    right: 0;
-    font-size: 20px;
+
+
 }
 
 .header .headerNav .item {
     color: #000;
-    /* margin: 0.6vw; */
     text-decoration: none;
-    /* border: none; */
     margin: 10px;
     text-align: center;
-    /* margin: 4px 2px; */
 }
 
 .header .headerNav .active {
