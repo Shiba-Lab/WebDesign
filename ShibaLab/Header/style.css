@@ -25,14 +25,10 @@ body {
 }
 
 .header .logo {
-    width: max(8vw,150px);
+    width: max(8vw,125px);
     margin-right: auto;
 }
 
-.header .headerNav {
-
-
-}
 
 .header .headerNav .item {
     color: #000;
