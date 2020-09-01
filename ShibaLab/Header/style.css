@@ -25,7 +25,7 @@ body {
 }
 
 .header .logo {
-    width: max(8vw,125px);
+    width: max(8vw,100px);
     margin-right: auto;
 }
 
