@@ -54,7 +54,21 @@ body {
     padding-right: 0.9vw;
 }
 
+/* ///////////////////////////////////////////////////////////// */
+.movie {
+    width: 100%;
+    height: 30vw;
+    border-radius: 30px;
+}
 
+.movie .youtube {
+    height: 100%;
+    width: 100%;
+    /* height: 56vw; */
+    vertical-align: bottom;
+    pointer-events: none;
+
+}
 
 /* /////////////////////////////////////////////////////////// */
 /* .container {
@@ -81,9 +95,7 @@ body {
     width: 100%;
     height: 350px;
     object-fit: cover;
-    border-radius: 10px;
 }
-
 
 .categoryNav {
     margin-bottom: 50px;
@@ -192,4 +204,15 @@ footer .logo {
 .user .rounded-circle {
     width: 70px;
     height: 70px;
+}
+
+
+/* ////////////////////////////////////////// */
+.blogs .card .card-img-top {
+    transition: all .4s else-in-out;
+    opacity: 0.9;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 50% 20%
 }
