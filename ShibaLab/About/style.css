@@ -32,7 +32,7 @@
     font-size: 10rem;
     font-weight: bold;
     color: #3F3C7C;
-    -webkit-text-stroke: 2px #ffffff;
+    /* -webkit-text-stroke: 2px #ffffff; */
     /* padding-top: 8%; */
     padding-left: 8%;
     padding-bottom: 2%;
