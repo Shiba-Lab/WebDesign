@@ -1,6 +1,6 @@
-@media (min-width: 375px) {
+@media (min-width: 280px) {
     html {
-        font-size: calc(0.375rem + ((1vw - 3.75px) * 0.2589));
+        font-size: calc(0.5rem + ((1vw - 2.8px) * 0.122));
         min-height: 0vw;
     }
 }
@@ -9,6 +9,45 @@
     html {
         font-size: 10px;
     }
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    /* position: fixed; */
+    background-color: #fff;
+    z-index: 2;
+}
+
+.header .logo {
+    width: max(8vw, 100px);
+    margin-right: auto;
+}
+
+.header .headerNav .item {
+    color: #000;
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.header .headerNav .active {
+    color: #ffffff;
+    background: #3f3c7c;
+    border-radius: 100vw;
+    margin: 0.6vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+    padding-left: 0.9vw;
+    padding-right: 0.9vw;
+}
+
+.background {
+    background-color: #3f3c7c;
 }
 
 .heading {
@@ -32,10 +71,11 @@
     font-size: 10rem;
     font-weight: bold;
     color: #3F3C7C;
-    /* -webkit-text-stroke: 2px #ffffff; */
-    /* padding-top: 8%; */
-    padding-left: 8%;
-    padding-bottom: 2%;
+    display: inline-block;
+    letter-spacing: 4px;
+    /* 文字間 */
+    text-shadow: 2px 2px 0px #ffffff, -2px 2px 0px #ffffff, 2px -2px 0px #ffffff, -2px -2px 0px #ffffff, 2px 0px 0px #ffffff, 0px 2px 0px #ffffff, -2px 0px 0px #ffffff, 0px -2px 0px #ffffff;
+    /* 文字の影 */
 }
 
 .small_heading {
@@ -50,8 +90,6 @@
 }
 
 .contents {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
     background-color: #ffffff;
     position: relative;
 }
@@ -62,14 +100,14 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    margin-bottom: 5rem;
     z-index: 1;
 }
 
 .image_text {
     color: #ffffff;
     width: 100%;
-    font-size: calc(1rem + ((1vw - 0.3rem) * 1.5625));
+    /* font-size: calc(1rem + ((1vw - 0.3rem) * 1.5625)); */
+    font-size: 3rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -82,7 +120,6 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8rem;
     position: relative;
     z-index: 1;
 }
@@ -96,4 +133,22 @@
     left: 50%;
     z-index: 0;
     transform: translate(-50%, 0);
+}
+
+footer {
+    background-color: #3f3c7c;
+}
+
+footer .logo {
+    width: 100px;
+}
+
+.Myfooter .footerNav {
+    font-size: 2rem;
+}
+
+.Myfooter .footerNav .item {
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
 }
