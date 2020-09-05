@@ -18,22 +18,21 @@
     flex-wrap: wrap;
     align-items: center;
     /* position: fixed; */
-    background-color:#fff;
+    background-color: #fff;
     z-index: 2;
 }
 
 .header .logo {
-    width: max(8vw,100px);
+    width: max(8vw, 100px);
     margin-right: auto;
 }
-
 
 .header .headerNav .item {
     color: #000;
     text-decoration: none;
     margin: 10px;
     text-align: center;
-    font-size : 16px;
+    font-size: 16px;
 }
 
 .header .headerNav .active {
@@ -72,7 +71,11 @@
     font-size: 10rem;
     font-weight: bold;
     color: #3F3C7C;
-    -webkit-text-stroke: 2px #ffffff;
+    display: inline-block;
+    letter-spacing: 4px;
+    /* 文字間 */
+    text-shadow: 2px 2px 0px #ffffff, -2px 2px 0px #ffffff, 2px -2px 0px #ffffff, -2px -2px 0px #ffffff, 2px 0px 0px #ffffff, 0px 2px 0px #ffffff, -2px 0px 0px #ffffff, 0px -2px 0px #ffffff;
+    /* 文字の影 */
 }
 
 .small_heading {
