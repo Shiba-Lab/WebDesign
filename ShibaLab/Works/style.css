@@ -25,7 +25,6 @@ body {
     left: 0;
     right: 0;
     text-align: middle;
-    position: absolute;
 }
 
 .title {
@@ -79,7 +78,6 @@ body {
     border-bottom: 2px solid rgb(93, 93, 93);
 }
 
-
 /* Pagenation */
 /* GENERAL STYLES */
 
@@ -115,4 +113,23 @@ body {
     background-color: #2ecc71;
     border-radius: 100%;
     color: #fff;
+}
+
+/* //////////////////////////// */
+footer {
+    background-color: #3f3c7c;
+}
+
+footer .logo {
+    width: 100px;
+}
+
+.Myfooter .footerNav {
+    font-size: 2rem;
+}
+
+.Myfooter .footerNav .item {
+    color: white;
+    text-decoration: none;
+    margin: 2rem;
 }

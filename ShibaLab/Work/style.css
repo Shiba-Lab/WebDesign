@@ -193,27 +193,17 @@ footer {
 }
 
 footer .logo {
-    position: absolute;
-    margin-left: 15vw;
-    top: 2vw;
-    width: 6vw;
+    width: 100px;
 }
 
 .Myfooter .footerNav {
-    position: absolute;
-    top: 45%;
-    right: 0;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .Myfooter .footerNav .item {
     color: white;
-    /* margin: 0.6vw; */
     text-decoration: none;
-    /* border: none; */
-    /* margin: 20px;
-    text-align: right; */
-    /* margin: 4px 2px; */
+    margin: 2rem;
 }
 
 .user {
