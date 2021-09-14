@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+/*テキストの自動拡大を無効化*/
+body {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+/*ページ全体の設定*/
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*「ヘッダー」ブロック*/
+header {
+    padding: 25px 15px;
+    background-color: #ffffff;
+}
+
+header figure {
+    text-align: left;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header .container {
+    margin: 0;
+}
+
+/*リンク*/
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*ナビゲーションメニュー*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+li:not(:last-child) {
+    margin-right: 20px;
+}
+
+/*「コンテンツ」ブロック*/
+div {
+    padding: 40px 15px;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+p {
+    line-height: 2;
+}
+
+/*画像*/
+img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+/*投稿日*/
+time {
+    color: #666666;
+}
+
+/*「フッター」ブロック*/
+footer {
+    background-color: #001c54;
+    padding: 0;
+    color: #ffffff;
+    font-size: 8px;
+    text-align: center;
+}
+
+footer figure {
+    text-align: left;
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+}
+
+footer ul {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.SNSLink {
+    margin: 0;
+    font-size: 30px;
+}
+
+#copyright {
+    background-color: #001540;
+    padding: 0;
+}
+
+/*トップページ*/
+section {
+    margin-top: 15px;
+}
+
+section h2 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+/*トップページ:ヒーローイメージ*/
+.hero {
+    background-image: url(img/index01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 467px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 280px;
+    height: 280px;
+}
+
+/*トップページ:記事一覧*/
+.toppost {
+    padding: 15px;
+}
+
+.toppost h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.toppost div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.toppost article {
+    width: 48%;
+    flex: none;
+}
+
+.toppost article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 14px;
+}
+
+.exhibitions {
+    padding: 15px;
+}
+
+.exhibitions h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.exhibitions div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.exhibitions article {
+    width: 48%;
+    flex: none;
+}
+
+.exhibitions article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 14px;
+}
+
+.works {
+    padding: 15px;
+}
+
+.works h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.works div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.works article {
+    width: 48%;
+    flex: none;
+}
+
+.works article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 14px;
+}
+
+/*aboutページ*/
+.about {
+    background-color: #d4e2ff;
+    padding: 20px 15px;
+    background-size: cover;
+}
+
+.about p {
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+#about01 {
+    background-image: url(img/about01.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about01 h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#about02 {
+    background-image: url(img/about02.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about02 h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#about03 {
+    background-image: url(img/about04.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about03 h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 30px;
+    padding: 0px 15px;
+}
+
+.container p {
+    padding: 0px 20px;
+    font-size: 14px;
+}
+
+/* ==== PC版 ==== */
+@media (min-width: 600px){
+
+/*PC版:コンテナ*/
+.container {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container article {
+    padding: 0px;
+}
+
+/*PC版:記事*/
+article {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/*PC版：「ヘッダー」ブロック内のコンテナ*/
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/*PC版：トップページ：ヒーローイメージ*/
+.hero{
+    height: 600px;
+}
+
+/*PC版：トップページ：記事一覧*/
+.toppost article {
+    width: 23%;
+}
+
+.toppost article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 0;
+}
+
+.exhibitions article {
+    width: 23%;
+}
+
+.exhibitions article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 0;
+}
+
+.works article {
+    width: 23%;
+}
+
+.works article:not(:nth-last-child(-n+2)) {
+    margin-bottom: 0;
+}
+
+/*PC版：「フッター」ブロック内のコンテナ*/
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+}
+/* ==== PCの設定ここまで ==== */
+
+/* ==== PC版(大) ==== */
+@media (min-width: 1025px) {
+
+/*PC版(大)：コンテナ*/
+.container {
+    max-width: 1100px;
+}
+
+/*PC版(大)：「コンテンツ」ブロック内のコンテナ*/
+.cotnents .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*PC版(大)：記事*/
+article{
+    width: 68%;
+    box-sizing: border-box;
+}
+
+}
+/* ==== PC版(大)の設定ここまで==== */
