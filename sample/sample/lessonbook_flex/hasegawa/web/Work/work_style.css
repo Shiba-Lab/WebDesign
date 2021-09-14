@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/* ページ全体の設定 */
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* carousel */
+.gallery-cell {
+    width: 80%;
+    height: 350px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+
+.f1{
+    background-image: url(https://picsum.photos/1000/500);
+}
+.f2{
+    background-image: url(https://picsum.photos/500/500);
+}
+.f3{
+    background-image: url(https://picsum.photos/800/500);
+}
+  
+.title{
+  font-family: serif;
+  font-weight: bold;
+  font-size: 2em;
+  color:rgba(0,0,0,.0);
+  text-align:center;
+  -webkit-text-stroke: 1px #FFF;
+}
+
+.sub-title{
+    font-family: serif;
+    padding-right: 5%;
+    text-align: right;
+    color: #FFF;
+}
+
+
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+h3{
+    font-family: "游ゴシック","Meiryo";
+    font-weight: bold;
+    text-align: center;
+    color: #362222;
+    margin: 32px 0 0;
+}
+
+h4{
+    color: gray;
+    padding-left: 5%;
+}
+
+.outline{
+    margin: 60px 10px;
+    text-align: center;
+}
+
+.text{
+    margin: 0;
+    padding: 0 10%;
+    line-height: 2;
+}
+
+.i-th{
+    text-align: center;
+    font-weight: normal;
+}
+
+.i-th, .i-td{
+    padding: 5px 18px;
+    font-family: sans-serif;
+}
+
+.kinds{
+    font-size: smaller;
+    background-color: rgba(63,60,124,0.15);
+    color: gray;
+    padding: 7px 9px;
+    display: inline-block;
+    margin: 2px;
+}
+
+.prof{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.m-th, .m-td{
+    padding: 0 18px;
+}
+
+.m-p{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+table{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.youtube-wrap{
+    margin: 30px 3%;
+}
+
+.video{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%;
+}
+
+.video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 650px) {
+    .sub-contents{
+        display: flex;
+        margin: 0 5%;
+    }
+
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 40%;
+    }
+}
+

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/* ページ全体の設定 */
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+main{
+    background-color: #F0E5CF;
+
+}
+
+.title{
+    position: relative;  
+    z-index: 0;
+    padding: 20px 10%;
+    color: #141E61;
+    font-weight: 500;
+}
+
+.sub-title{
+    font-size: 14px;
+}
+
+span {
+    max-width: 500px;
+    position:relative;
+    margin:10px;
+    display:inline-block;
+    padding:8px 25px 8px 25px;
+    border:2px solid #4B6587;
+    font-family:sans-serif;
+    font-size: 28px;
+    letter-spacing:1px;
+}
+
+   
+span:after {
+    position: absolute;
+    top:2px;
+    left:-6px;
+    content:"";
+    height:100%;
+    width:100%;
+    transform: rotate(-4deg);
+    z-index: -1;
+    background: #F7F6F2;
+}
+
+.top{
+    width: 100%;
+    height: auto;
+}
+
+h1, h3{
+    font-family: "游ゴシック","Meiryo";
+    text-align: center;
+}
+
+h3{
+    color: #4B6587;
+}
+
+.item{
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+.p-center{
+    text-align: center;
+    margin: 0;
+}
+.contents{
+    padding-bottom: 20px;
+}
+.container{
+    padding: 0 40px;
+}
+
+.outline{
+    line-height: 2;
+    margin: 0 0 1em;
+    color: #11324D;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+li{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 0;
+}
+
+.work-name{
+    margin: 0;
+    color: white;
+    font-size: 26px;
+
+}
+
+.work-category{
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+
+.work-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.w-text{
+    padding: 20% 10%;
+    text-align: right;
+    font-family: "Yu Mincho","Hiragino Mincho ProN","Hiragino Mincho Pro";
+    white-space: normal;
+
+}
+
+.work{
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+
+@media (min-width: 1000px){  
+    .contents{
+        display: flex;
+        padding: 30px 0;
+    }
+
+    .sub{
+        margin-right: 40px;
+        width: 400px;
+        border: solid 5px #F7F6F2;
+        border-radius: 20px;
+        padding: 10px 0 30px;
+    }
+
+    .container{
+        width: calc(100% - 450px);
+    }
+
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    li{
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    .w-text{
+        padding: 10% 5% 0;
+    }
+    
+}
+
+   
