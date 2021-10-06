@@ -17,30 +17,87 @@
         </header>
         <main>
             <h1 class="page-title">Exhibitions</h1>
-            <header ></header>
+
+            <div class="filter">
+                <select name="" id="" onChange="location.href=value">
+                    <option disabled selected>ALL</option>
+                    <option value="#">2021</option>
+                    <option value="#">2020</option>
+                    <option value="#">2019</option>
+                    <option value="#">2018</option>
+                </select>
+            </div>
+
             <ul class="contents">
-                <li class="left">
+                <li class="box">
                     <div class="flex">
-                        <img src="https://picsum.photos/1300/800" alt="" class="pic-L">
-                        <div class="margin-r">
+                        <div class="margin"></div>
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="https://picsum.photos/1300/800" alt="" class="pic">
+                            </a>
                         </div>
                     </div>
-                    <div class="exhibition-title R">
-                        <p class="name">芝浦祭</p>
-                        <p class="thema">テーマ</p>
-                        <p class="date">2019.11.01</p>
+                    <div class="exhibition-title">
+                        <a href="#">
+                            <p class="name">XXX展</p>
+                            <p class="thema">テーマ</p>
+                            <p class="date">2018.xx.xx</p>
+                        </a>
                     </div>
                 </li>
 
-                <li class="right">
+                <li class="box">
                     <div class="flex">
-                        <div class="margin-l"></div>
-                        <img src="https://picsum.photos/1300/800" alt="" class="pic-R">
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="https://picsum.photos/800/800" alt="" class="pic">
+                            </a> 
+                        </div>
+                        <div class="margin"></div>
                     </div>
-                    <div class="exhibition-title L">
-                        <p class="name">XXXXX展</p>
-                        <p class="thema">テーマ</p>
-                        <p class="date">2018.xx.xx</p>
+                    <div class="exhibition-title">
+                        <a href="#">
+                            <p class="name">芝浦祭</p>
+                            <p class="thema">テーマ</p>
+                            <p class="date">2019.11.01</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="box">
+                    <div class="flex">
+                        <div class="margin"></div>
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="https://picsum.photos/1000/800" alt="" class="pic">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="exhibition-title">
+                        <a href="#">
+                            <p class="name">XXXXX展</p>
+                            <p class="thema">テーマ</p>
+                            <p class="date">2018.xx.xx</p>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="box">
+                    <div class="flex">
+                        <div class="zoom">
+                            <a href="#">
+                                <img src="https://picsum.photos/300/800" alt="" class="pic">
+                            </a>
+                        </div>
+                        <div class="margin"></div>
+                    </div>
+                    <div class="exhibition-title">
+                        <a href="#">
+                            <p class="name">芝浦祭</p>
+                            <p class="thema">テーマ</p>
+                            <p class="date">2019.11.01</p>
+                        </a>
                     </div>
                 </li>
 
@@ -48,9 +105,9 @@
 
             <div class="pagination">
                 <ul>
-                    <a href="#"><li><</li></a>
+                    <a href="#"><li>&lt</li></a>
                     <a class="is-active" href="#"><li>1</li></a>
-                    <a href="#"><li>></li></a>
+                    <a href="#"><li>&gt</li></a>
                 </ul>
             </div>
 

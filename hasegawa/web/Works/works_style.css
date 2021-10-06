@@ -11,38 +11,53 @@ main{
 }
 
 .page-title{
-    color: #3F3C7C;
+    color: #f0a000;
 }
 
-header{
-    margin: 20px 0;
+
+/* カテゴリー切り替え */
+ol{
+    list-style: none;
+    padding: 0;
 }
-span{
-    margin: 10px;
+
+.filters {
+    text-align: center;
+    margin-bottom: 2rem;
 }
-.line{
-	position: relative;
-	overflow: hidden;
-	padding: 1em 0;
+.filters * {
+    display: inline-block;
 }
-.line::before,
-.line::after{
-	content: "";
-	position: absolute;
-	bottom: 0;
+.filters li {
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.25rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #999;
 }
-.line:before{
-	border-bottom: 4px solid black;
-	width: 100%;
+.is-selected{
+    pointer-events: none;
 }
-.line:after{
-	border-bottom: 4px solid rgb(200, 200, 200);
-	width: 100%;
+.is-selected li{
+    background-color: rgb(25, 25, 112);
+    color: #fff;
 }
+.filters li:hover {
+    background: rgba(25, 25, 112, 0.6);
+    color: #fff;
+}
+.filters a{
+    text-decoration: none;
+}
+/* === */
 
 .work-list{
     list-style-type: none;
     padding: 0;
+    margin: 0 5%;
 }
 
 .work-list a{
@@ -55,35 +70,37 @@ span{
 
 .work-list li{
     margin: 20px auto;
-    background-color: #C8C6C6;
     width: 500px;
     max-width: 100%;
 }
 
-img{
+.work-list img{
     position: relative;
-    height: 350px;
+    height: 250px;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
+    vertical-align: top;
 }
 
 .text{
+    background-color: #ffbf3e;
     padding: 5px 20px 20px;
-}
-
-p{
-    margin: 0;
 }
 
 .event{
     text-align: right;
-    color: #114E60;
+    color: #fff;
+    margin: 0;
 }
 
 .work-title{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 600;
     font-size: 20px;
-    color: midnightblue;
+    color: #fff;
 }
 
 
@@ -113,7 +130,7 @@ p{
     margin: 0 5px;
     text-align: center;
     color: midnightblue;
-    background-color: beige;
+    background-color: #F9F8EB;
     border-radius: 100%;
   }
   
@@ -141,8 +158,13 @@ p{
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
+        margin: 0 4%;        
     }
     
+    .work-list img{
+        height: 300px;
+    }
+
     .work-list li{
         box-sizing: border-box;
         width: 48%;
@@ -156,3 +178,21 @@ p{
 
 }
 
+
+@media (min-width: 1200px){
+    .work-list{
+        margin: 0 2%;
+    }
+    
+    .work-list img{
+        height: 250px;
+    }
+    .work-list li{
+        box-sizing: border-box;
+        width: 31%;
+        margin: 1%;
+        max-width: 600px;
+    }
+
+
+}
