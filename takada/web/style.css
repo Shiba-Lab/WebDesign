@@ -29,12 +29,18 @@ header img {
 
 header .container {
     margin: 0;
+    background-color: #ffffff;
 }
 
 /*リンク*/
 a {
     color: inherit;
     text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
 }
 
 /*ナビゲーションメニュー*/
@@ -54,6 +60,7 @@ li:not(:last-child) {
 
 /*「コンテンツ」ブロック*/
 div {
+    background-color: #fffcf7;
     padding: 40px 15px;
 }
 
@@ -83,7 +90,7 @@ time {
 
 /*「フッター」ブロック*/
 footer {
-    background-color: #001c54;
+    background-color: #ffaa00;
     padding: 0;
     color: #ffffff;
     font-size: 8px;
@@ -110,15 +117,16 @@ footer ul {
 }
 
 #copyright {
-    background-color: #001540;
+    background-color: #f0a000;
     padding: 0;
+    margin: 0;
+}
+
+footer .container {
+    background-color: #ffaa00;
 }
 
 /*トップページ*/
-section {
-    margin-top: 15px;
-}
-
 section h2 {
     text-align: center;
     margin: 0;
@@ -126,6 +134,7 @@ section h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 30px;
     font-weight: 900;
+    color: #4a3d23;
 }
 
 /*トップページ:ヒーローイメージ*/
@@ -164,6 +173,7 @@ section h2 {
 .toppost article {
     width: 48%;
     flex: none;
+    color: #4a3d23;
 }
 
 .toppost article:not(:nth-last-child(-n+2)) {
@@ -189,6 +199,7 @@ section h2 {
 .exhibitions article {
     width: 48%;
     flex: none;
+    color: #4a3d23;
 }
 
 .exhibitions article:not(:nth-last-child(-n+2)) {
@@ -214,6 +225,7 @@ section h2 {
 .works article {
     width: 48%;
     flex: none;
+    color: #4a3d23;
 }
 
 .works article:not(:nth-last-child(-n+2)) {
@@ -222,7 +234,6 @@ section h2 {
 
 /*aboutページ*/
 .about {
-    background-color: #d4e2ff;
     padding: 20px 15px;
     background-size: cover;
 }
@@ -239,7 +250,7 @@ section h2 {
     background-position: center;
     height: 225px;
     margin-top: 20px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -254,7 +265,7 @@ section h2 {
     background-size: cover;
     background-position: center;
     height: 225px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
@@ -269,12 +280,27 @@ section h2 {
     background-size: cover;
     background-position: center;
     height: 225px;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
 #about03 h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#about04 {
+    background-image: url(img/about05.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 225px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#about04 h2 {
     color: #ffffff;
     text-align: center;
 }
@@ -287,10 +313,49 @@ section h2 {
 .container p {
     padding: 0px 20px;
     font-size: 14px;
+    color: #ffffff;
+}
+
+/*コンタクトページ*/
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"] {
+    background-color: #ffaa00;
+    border: none;
+    -webkit-appearance: none;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.contact h3 {
+    text-align: center;
+    color: #4a3d23;
 }
 
 /* ==== PC版 ==== */
 @media (min-width: 600px){
+
+/*PC版：画像サイズ*/
+.hero, #about01, #about02, #about03, #about04 {
+    margin: 0 10%;
+}
 
 /*PC版:コンテナ*/
 .container {
@@ -301,6 +366,10 @@ section h2 {
 
 .container article {
     padding: 0px;
+}
+
+.container p {
+    box-sizing: border-box;
 }
 
 /*PC版:記事*/
@@ -359,6 +428,11 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/*PC版：「コンタクト」ページ*/
+input[type="submit"] {
+    width: 250px;
 }
 
 }
